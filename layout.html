@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Evaluation</title>
+        <style type="text/css">
+            *{
+                font-family: sans-serif;
+            }
+            @media only screen and (max-width: 600px) {
+                #div1{
+                    margin: 0 0 100px 0;
+                }
+                .tag1,.head1,.cont1,.bottun{
+                    text-align: center;
+                }
+                .tag1{
+                    color: orangered;
+                }
+                h4{
+                    margin: 0 0 5px 5px;
+                }
+                .cont1{
+                    margin: 0 0 0 1vw;
+                    float: left;
+                }
+                .cont2{
+                    float: left;
+                }
+                #cont1{
+                    margin: 0 0 0 11vw;
+                }
+                .bottun{
+                    margin: auto;
+                    margin-top: 260px;
+                    padding: 10px;
+                    width: 100px;
+                    font-size: 10px;
+                    color: white;
+                    background-color: orangered;
+                    text-align: center;
+                    clear: left;
+                }
+                .text1{
+                    text-align: left;
+                    margin-top: 10px;
+                    font-size: 12px;
+                }
+                .text2{
+                    text-align: left;
+                    margin-top: 5px;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+                .para{
+                    text-align: left, justify;
+                }
+                #grid{
+                    display: grid;
+                    width: 100%;
+                    height: 500px;
+                    grid-template:  "a"
+                                    "b"
+                                    "c"
+                                    "d"
+                                    "e"
+                                    "f"
+                                    "g"
+                                    "h"
+                                    "i";
+                }
+                #grid1{
+                    grid-area: a;
+                    margin: 0px;
+                }
+                #grid2{
+                    grid-area: b;
+                    margin: 0px;
+                }
+                #grid3{
+                    grid-area: c;
+                    margin: 0px;
+                }
+                #grid4{
+                    padding: 20px;
+                    grid-area: d;
+                }
+                #grid5{
+                    padding: 20px;
+                    grid-area: e;
+                }
+                #grid6{
+                    padding: 20px;
+                    grid-area: f;
+                }
+                #grid7{
+                    padding: 20px;
+                    grid-area: g;
+                }
+                #grid8{
+                    padding: 20px;
+                    grid-area: h;
+                }
+                #grid9{
+                    padding: 20px;
+                    grid-area: i;
+                }
+            } 
+
+            @media only screen and (min-width: 600px) {
+                #div1{
+                    margin: 0 0 100px 0;
+                }
+                .tag1,.head1,.cont1,.bottun{
+                    text-align: center;
+                }
+                .tag1{
+                    color: orangered;
+                }
+                h4{
+                    margin: 0 0 5px 5px;
+                }
+                .cont1{
+                    margin: 0 0 0 1vw;
+                    float: left;
+                }
+                .cont2{
+                    float: left;
+                }
+                #cont1{
+                    margin: 0 0 0 11vw;
+                }
+                .bottun{
+                    margin: auto;
+                    margin-top: 260px;
+                    padding: 10px;
+                    width: 100px;
+                    font-size: 10px;
+                    color: white;
+                    background-color: orangered;
+                    text-align: center;
+                    clear: left;
+                }
+                .text1{
+                    text-align: left;
+                    margin-top: 10px;
+                    font-size: 12px;
+                }
+                .text2{
+                    text-align: left;
+                    margin-top: 5px;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+                .para{
+                    text-align: left, justify;
+                }
+                #grid{
+                    display: grid;
+                    width: 100%;
+                    height: 500px;
+                    grid-template:  "a a"
+                                    "b b"
+                                    "c c"
+                                    "d e"
+                                    "f g"
+                                    "h i";
+                }
+                #grid1{
+                    grid-area: a;
+                    margin: 0px;
+                }
+                #grid2{
+                    grid-area: b;
+                    margin: 0px;
+                }
+                #grid3{
+                    grid-area: c;
+                    margin: 0px;
+                }
+                #grid4{
+                    padding: 20px;
+                    grid-area: d;
+                }
+                #grid5{
+                    padding: 20px;
+                    grid-area: e;
+                }
+                #grid6{
+                    padding: 20px;
+                    grid-area: f;
+                }
+                #grid7{
+                    padding: 20px;
+                    grid-area: g;
+                }
+                #grid8{
+                    padding: 20px;
+                    grid-area: h;
+                }
+                #grid9{
+                    padding: 20px;
+                    grid-area: i;
+                }
+            }
+            @media only screen and (min-width: 992px) {
+                #div1{
+                    margin: 0 0 100px 0;
+                }
+                .tag1,.head1,.cont1,.bottun{
+                    text-align: center;
+                }
+                .tag1{
+                    color: orangered;
+                }
+                h4{
+                    margin: 0 0 5px 5px;
+                }
+                .cont1{
+                    margin: 0 0 0 1vw;
+                    float: left;
+                }
+                .cont2{
+                    float: left;
+                }
+                #cont1{
+                    margin: 0 0 0 11vw;
+                }
+                .bottun{
+                    margin: auto;
+                    margin-top: 260px;
+                    padding: 10px;
+                    width: 100px;
+                    font-size: 10px;
+                    color: white;
+                    background-color: orangered;
+                    text-align: center;
+                    clear: left;
+                }
+                .text1{
+                    text-align: left;
+                    margin-top: 10px;
+                    font-size: 12px;
+                }
+                .text2{
+                    text-align: left;
+                    margin-top: 5px;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+                .para{
+                    text-align: left, justify;
+                }
+                #grid{
+                    display: grid;
+                    width: 100%;
+                    height: 500px;
+                    grid-template:  "a a a"
+                                    "b b b"
+                                    "c c c"
+                                    "d e f"
+                                    "g h i";
+                }
+                #grid1{
+                    grid-area: a;
+                    margin: 0px;
+                }
+                #grid2{
+                    grid-area: b;
+                    margin: 0px;
+                }
+                #grid3{
+                    grid-area: c;
+                    margin: 0px;
+                }
+                #grid4{
+                    padding: 20px;
+                    grid-area: d;
+                }
+                #grid5{
+                    padding: 20px;
+                    grid-area: e;
+                }
+                #grid6{
+                    padding: 20px;
+                    grid-area: f;
+                }
+                #grid7{
+                    padding: 20px;
+                    grid-area: g;
+                }
+                #grid8{
+                    padding: 20px;
+                    grid-area: h;
+                }
+                #grid9{
+                    padding: 20px;
+                    grid-area: i;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            <h6 class="tag1">NEWS & UPDATE</h6>
+            <h2 class="head1">Our Blog Posts</h2>
+
+            <div id="cont1" class="cont1">
+                <img src="https://via.placeholder.com/250x150" />
+                <div class="text1">29, January 2019</div>
+                <div class="text2">Architectural Art Modern</div>
+            </div>
+            <div class="cont1">
+                <img src="https://via.placeholder.com/250x150" />
+                <div class="text1">29, January 2019</div>
+                <div class="text2">Architectural Art Modern</div>
+            </div>
+            <div class="cont1">
+                <img src="https://via.placeholder.com/250x150" />
+                <div class="text1">29, January 2019</div>
+                <div class="text2">Architectural Art Modern</div>
+            </div>
+
+            <h6 class="bottun">View All Posts</h6>
+        </div>
+
+        <div id="grid">
+            <h6 id="grid1" class="tag1">SERVICES</h6>
+            <h2 id="grid2" class="head1">Our Services</h2>
+            <h6 id="grid3" class="head1">Lorem ipsum dolar sit amet, consectetur adispisicing elit. Eligendi, explicabo, quasi. Magni <br>deserunt sunt labore.</h6>
+            
+            <div id="grid4">
+                <img class="cont2" src="https://via.placeholder.com/80" />
+                <div class="cont2">
+                    <h4>Innovative Structure<br></h4>
+                    <span class="para">Cras sit amet nibh libero,<br> in gravida nulla. Nulla vet metus<br> scelerisque ante sollicitudin..</span>
+                </div>
+            </div>
+            <div id="grid5">
+                <img class="cont2" src="https://via.placeholder.com/80" />
+                <div class="cont2">
+                    <h4>Architectural Design<br></h4>
+                    <span class="para">Cras sit amet nibh libero,<br> in gravida nulla. Nulla vet metus<br> scelerisque ante sollicitudin..</span>
+                </div>
+            </div>
+            <div id="grid6">
+                <img class="cont2" src="https://via.placeholder.com/80" />
+                <div class="cont2">
+                    <h4>Interior Design<br></h4>
+                    <span class="para">Cras sit amet nibh libero,<br> in gravida nulla. Nulla vet metus<br> scelerisque ante sollicitudin..</span>
+                </div>
+            </div>
+            <div id="grid7">
+                <img class="cont2" src="https://via.placeholder.com/80" />
+                <div class="cont2">
+                    <h4>Modern Window Design<br></h4>
+                    <span class="para">Cras sit amet nibh libero,<br> in gravida nulla. Nulla vet metus<br> scelerisque ante sollicitudin..</span>
+                </div>
+            </div>
+            <div id="grid8">
+                <img class="cont2" src="https://via.placeholder.com/80" />
+                <div class="cont2">
+                    <h4>Experts Architect<br></h4>
+                    <span class="para">Cras sit amet nibh libero,<br> in gravida nulla. Nulla vet metus<br> scelerisque ante sollicitudin..</span>
+                </div>
+            </div>
+            <div id="grid9">
+                <img class="cont2" src="https://via.placeholder.com/80" />
+                <div class="cont2">
+                    <h4>Sofa Design<br></h4>
+                    <span class="para">Cras sit amet nibh libero,<br> in gravida nulla. Nulla vet metus<br> scelerisque ante sollicitudin..</span>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div></div>
+    </body>
+</html>
